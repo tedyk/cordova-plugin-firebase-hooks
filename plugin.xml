@@ -1,0 +1,33 @@
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+xmlns:android="http://schemas.android.com/apk/res/android"
+           id="cordova-plugin-firebase-hooks"
+      version="0.9.0">
+
+    <name>FirebaseHooks</name>
+    <description>Cordova firebase plugin starter</description>
+    <license>MIT</license>
+    <keywords>cordova</keywords>
+    <repo>https://github.com/chemerisuk/cordova-plugin-firebase-hooks</repo>
+    <issue>https://github.com/chemerisuk/cordova-plugin-firebase-hooks/issues</issue>
+
+    <engines>
+        <engine name="cordova" version=">=3.5.0"/>
+    </engines>
+
+    <dependency id="cordova-plugin-cocoapod-support"/>
+
+    <platform name="ios">
+        <preference name="pods_ios_min_version" value="7.0" />
+        <preference name="pods_use_frameworks" value="true" />
+
+        <hook type="after_plugin_install" src="hooks/ios/copy-google-services.js" />
+        <hook type="after_plugin_install" src="hooks/ios/install-npm-dependencies.js" />
+    </platform>
+
+    <platform name="android">
+        <framework src="src/android/plugin.gradle" custom="true" type="gradleReference" />
+
+        <hook type="after_plugin_install" src="hooks/android/copy-google-services.js" />
+    </platform>
+
+</plugin>

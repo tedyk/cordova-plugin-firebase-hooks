@@ -1,0 +1,34 @@
+{
+  "name": "cordova-plugin-firebase-hooks",
+  "version": "0.9.0",
+  "description": "Cordova firebase plugin starter",
+  "cordova": {
+    "id": "cordova-plugin-firebase-hooks",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chemerisuk/cordova-plugin-firebase-hooks.git"
+  },
+  "author": "Maksim Chemerisuk <chemerisuk@gmail.com> (https://github.com/chemerisuk)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chemerisuk/cordova-plugin-firebase-hooks/issues"
+  },
+  "homepage": "https://github.com/chemerisuk/cordova-plugin-firebase-hooks#readme",
+  "keywords": [
+    "cordova",
+    "firebase",
+    "hooks",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "dependencies": {
+    "xcode": "0.8.0",
+    "plist": "1.1.0"
+  }
+}
