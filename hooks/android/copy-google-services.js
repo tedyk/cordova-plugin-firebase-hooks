@@ -7,7 +7,7 @@ module.exports = function (context) {
     console.error(what);
   }
 
-  logMe("Running hook to copy any available google-services file to Android");
+  logMe("Running hook to copy any available google-services.json file to Android");
 
   function fileExists(path) {
     try  {

@@ -10,7 +10,7 @@ module.exports = function (context) {
     console.error(what);
   }
 
-  logMe("START Running hook to copy any available google-services file to iOS");
+  logMe("Running hook to copy any available GoogleService-Info.plist file to iOS");
 
   var getValue = function(config, name) {
       var value = config.match(new RegExp('<' + name + '>(.*?)</' + name + '>', "i"));
@@ -93,5 +93,4 @@ module.exports = function (context) {
       }
     }
   }
-  logMe("END Running hook to copy any available google-services file to iOS");
 };
