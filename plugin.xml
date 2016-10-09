@@ -17,15 +17,14 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <dependency id="cordova-plugin-cocoapod-support"/>
 
     <platform name="ios">
-        <preference name="pods_ios_min_version" value="7.0" />
-        <preference name="pods_use_frameworks" value="true" />
+        <pods-config ios-min-version="7.0" uses-frameworks="true"/>
 
-        <hook type="after_plugin_install" src="hooks/ios/copy-google-services.js" />
         <hook type="after_plugin_install" src="hooks/ios/install-npm-dependencies.js" />
+        <hook type="after_plugin_install" src="hooks/ios/copy-google-services.js" />
     </platform>
 
     <platform name="android">
-        <framework src="src/android/plugin.gradle" custom="true" type="gradleReference" />
+        <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
 
         <hook type="after_plugin_install" src="hooks/android/copy-google-services.js" />
     </platform>
