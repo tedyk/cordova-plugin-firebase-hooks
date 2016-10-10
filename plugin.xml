@@ -20,7 +20,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <config-file parent="FirebaseAppDelegateProxyEnabled" target="*-Info.plist">
             <true />
         </config-file>
-               
+
         <pods-config ios-min-version="7.0" uses-frameworks="true"/>
 
         <hook type="after_plugin_install" src="hooks/ios/install-npm-dependencies.js" />
