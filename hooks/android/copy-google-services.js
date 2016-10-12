@@ -35,7 +35,7 @@ module.exports = function (context) {
 
     for (var i = 0; i < paths.length; i++) {
       if (fileExists(paths[i])) {
-        logMe("Found this file to write to Android: " + paths[i]);
+        // logMe("Found this file to write to Android: " + paths[i]);
         try {
           var contents = fs.readFileSync(paths[i]).toString();
           fs.writeFileSync(path.join(androidFolder, "google-services.json"), contents);

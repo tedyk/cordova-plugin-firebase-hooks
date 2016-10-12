@@ -79,7 +79,7 @@ module.exports = function (context) {
       if (fileExists(paths[i])) {
         try {
           var contents = fs.readFileSync(paths[i]).toString();
-          logMe("Found this file to write to iOS: " + paths[i]);
+          // logMe("Found this file to write to iOS: " + paths[i]);
           var destFolder = path.join(iosFolder, projName, "Resources");
           if (!fs.existsSync(destFolder)) {
             fs.mkdirSync(destFolder);
