@@ -23,7 +23,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
         <pods-config ios-min-version="7.0" uses-frameworks="true"/>
 
-        <hook type="after_plugin_install" src="hooks/ios/install-npm-dependencies.js" />
         <hook type="after_prepare" src="hooks/ios/copy-google-services.js" />
     </platform>
 

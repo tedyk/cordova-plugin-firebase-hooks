@@ -26,9 +26,5 @@
     "ecosystem:cordova",
     "cordova-android",
     "cordova-ios"
-  ],
-  "dependencies": {
-    "xcode": "^0.8.0",
-    "plist": "^1.1.0"
-  }
+  ]
 }
