@@ -3,8 +3,8 @@ module.exports = function (context) {
   var fs = require('fs'),
       path = require('path'),
       util = require('util'),
-      xcode = context.requireCordovaModule('xcode'),
-      plist = context.requireCordovaModule('plist');
+      xcode = context.requireCordovaModule('cordova-lib/node_modules/xcode'),
+      plist = context.requireCordovaModule('cordova-lib/node_modules/plist');
 
   function logMe(what) {
     console.error(what);
