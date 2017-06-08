@@ -1,17 +1,17 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 xmlns:android="http://schemas.android.com/apk/res/android"
            id="cordova-plugin-firebase-hooks"
-      version="0.9.6">
+      version="0.9.7">
 
     <name>FirebaseHooks</name>
     <description>Cordova firebase plugin starter</description>
     <license>MIT</license>
     <keywords>cordova</keywords>
-    <repo>https://github.com/chemerisuk/cordova-plugin-firebase-hooks</repo>
-    <issue>https://github.com/chemerisuk/cordova-plugin-firebase-hooks/issues</issue>
+    <repo>https://github.com/tedyk/cordova-plugin-firebase-hooks</repo>
+    <issue>https://github.com/tedyk/cordova-plugin-firebase-hooks/issues</issue>
 
     <engines>
-        <engine name="cordova" version=">=3.5.0"/>
+        <engine name="cordova" version=">=4.0.0"/>
     </engines>
 
     <dependency id="cordova-plugin-cocoapod-support"/>
@@ -26,15 +26,14 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <hook type="after_prepare" src="hooks/ios/copy-google-services.js" />
     </platform>
 
-    <!--
     <platform name="android">
         <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+        <!--
         <config-file parent="/resources" target="res/values/strings.xml">
             <string name="google_app_id">@string/google_app_id</string>
             <string name="google_api_key">@string/google_api_key</string>
         </config-file>
-
+        -->
         <hook type="after_prepare" src="hooks/android/copy-google-services.js" />
     </platform>
-    -->
 </plugin>
