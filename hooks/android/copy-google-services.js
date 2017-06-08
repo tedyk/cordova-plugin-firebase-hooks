@@ -48,7 +48,11 @@ module.exports = function (context) {
 
           // strip non-default value
           strings = strings.replace(new RegExp('<string name="google_api_key">[^<]+?</string>', "i"), '<string name="google_api_key">' + json.client[0].api_key[0].current_key + '</string>');
-
+          
+          // strip off duplicate google_app_id and google_api_key entries
+          strings = strings.replace(new RegExp('<string name="google_app_id">@[^<]+?</string>', "ig"), '');
+          strings = strings.replace(new RegExp('<string name="google_api_key">@[^<]+?</string>', "ig"), '');
+          
           // strip empty lines
           strings = strings.replace(new RegExp('(\r\n|\n|\r)[ \t]*(\r\n|\n|\r)', "gm"), '$1');
 
